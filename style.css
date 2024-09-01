@@ -1,112 +1,171 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e;
-    color: #d1d1d1;
-    margin: 0;
-    padding: 0;
+    background-color: #1e1e1e; /* Dark background throughout */
+    color: #d1d1d1; /* Light text */
+    font-family: 'Helvetica', sans-serif; /* Helvetica font throughout */
+    line-height: 1.6;
 }
 
+/* Link Styles */
 a {
-    color: #a8d08d;
-    text-decoration: none;
+    color: #a8d08d; /* Matcha green for links */
+    transition: color 0.3s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
+    color: #f2a07b; /* Coral on hover */
     text-decoration: underline;
 }
 
-header {
-    background-color: #2b2b2b;
-    padding: 20px 0;
+/* Navbar Customization */
+.navbar {
+    background-color: #343a40; /* Dark navbar */
 }
 
-.logo {
-    color: #a8d08d;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 20px;
+.navbar-brand {
+    color: #a8d08d !important; /* Matcha green brand name */
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar-nav .nav-link {
+    color: #f8f9fa !important; /* Light navbar links */
+    margin-left: 1rem;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: #f2a07b !important; /* Coral on hover and active */
 }
 
-.nav-links li {
-    margin-left: 20px;
+/* Hero Section */
+#hero {
+    padding: 80px 0;
+    text-align: center;
 }
 
-.nav-links a {
-    color: #d1d1d1;
-    font-size: 1rem;
-}
-
-.nav-links a:hover {
-    color: #a8d08d;
-}
-
-.home-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #2e2e2e;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-}
-
-.intro img {
+#hero img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 30px;
-    border: 4px solid #a8d08d;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #a8d08d; /* Matcha green border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.intro-text h1 {
+#hero h1 {
     color: #a8d08d;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 3rem;
 }
 
-.intro-text p {
-    margin: 5px 0;
+#hero .lead,
+#hero p {
+    color: #d1d1d1;
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
-.research-section {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #1e1e1e;
+/* Title Sections */
+.title-section .title-box {
+    background-image: url('images/title-background.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    width: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
 }
 
-.research-section h2 {
+.title-section h2 {
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center; /* Centralize titles */
+}
+
+/* Research Highlights Section */
+#research,
+#phd-highlights,
+#previous-academic {
+    padding: 60px 0;
+}
+
+#research ul,
+#phd-highlights ul,
+#previous-academic ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#research ul li,
+#phd-highlights ul li,
+#previous-academic ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    font-size: 1.1rem;
+}
+
+#research ul li:before,
+#phd-highlights ul li:before,
+#previous-academic ul li:before {
+    content: "\2022"; /* Custom bullet */
+    color: #f2a07b; /* Coral bullet */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+
+
+/* Centralized Subsection Titles */
+#phd-highlights h3,
+#previous-academic h3,
+#research h3 {
     color: #a8d08d;
     margin-bottom: 20px;
+    font-size: 1.75rem;
+    border-bottom: 2px solid #3a3a3a;
+    padding-bottom: 10px;
+    text-align: center; /* Centralize titles */
 }
 
-.research-section p, .research-section ul {
-    margin-bottom: 30px;
-}
-
+/* Footer Styles */
 footer {
-    background-color: #2b2b2b;
-    color: #d1d1d1;
-    text-align: center;
+    background-color: #343a40; /* Dark footer background */
+    color: #f8f9fa; /* Light text */
     padding: 20px 0;
-    margin-top: 20px;
+}
+
+footer a {
+    color: #a8d08d;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #f2a07b;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1); /* Ensures icons are visible on dark background */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    filter: brightness(0.8) invert(1);
+}
+
+html {
+    scroll-behavior: smooth;
 }

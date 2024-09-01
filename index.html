@@ -3,50 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snehashis Parashar</title>
+    <title>Home - Snehashis Parashar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for coral-colored carousel buttons */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: coral;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Snehashis Parashar</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Snehashis Parashar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="academic.html">Academic Career</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="home" class="home-section">
-        <div class="intro">
-            <img src="./images/sp.jpg" alt="Snehashis Parashar">
-            <div class="intro-text">
-                <h1>Snehashis Parashar</h1>
-                <p>Current Position: [Your Position]</p>
-                <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                <p>Phone: [Your Phone Number]</p>
-                <p>Location: [Your Location]</p>
+    <!-- Hero Section -->
+    <section id="hero" class="container-fluid d-flex align-items-center justify-content-center text-light py-5">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+            <img src="images/sp.jpg" class="img-fluid rounded-circle" alt="Snehashis Parashar">
+            <div class="ml-md-4 mt-4 mt-md-0 text-center text-md-left">
+                <h1 class="display-4">Snehashis Parashar</h1>
+                <p class="lead">PhD student in High Energy Physics Phenomenology</p>
+                <p>Email: <a href="mailto:ph20resch11006@iith.ac.in">ph20resch11006@iith.ac.in</a></p>
+                <p>Department of Physics, Indian Institute of Technology Hyderabad</p>
+                <p>Kandi, Telangana, India - 502284</p>
+                <p>Find our research at: <a href="https://inspirehep.net/authors/2094706?ui-citation-summary=true" target="_blank">InspireHEP</a></p>
             </div>
         </div>
     </section>
 
-    <section id="research" class="research-section">
-        <h2>Research Interests</h2>
-        <p>Describe your research interests here.</p>
-
-        <h2>Research Highlights</h2>
-        <ul>
-            <li>Highlight 1</li>
-            <li>Highlight 2</li>
-            <li>Highlight 3</li>
-        </ul>
+    <!-- Research Title Section -->
+    <section id="research-title" class="title-section">
+        <div class="title-box d-flex align-items-center justify-content-center">
+            <h2>About my research</h2>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Snehashis Parashar. All rights reserved.</p>
+    <!-- Research Highlights Section -->
+    <section id="research" class="container py-5 text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-success">What am I working on?</h3>
+                <ul>
+                    <li>Hunting for unconventional signatures of New Physics at future colliders, especially the Muon Collider.</li>
+                    <li>Implementing simple Machine Learning techniques to discern weaker signals at the colliders.</li>
+                    <li>Studying the nature of Dark Matter, one model at a time.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-success">What do I use?</h3>
+                <ul>
+                    <li>Simulation and analysis: Pythia8, MadGraph, Delphes, ROOT.</li>
+                    <li>Model building and other tools: CalcHEP, SARAH, SPheno, MicrOMEGAs.</li>
+                    <li>Programming: C/C++, Python, Mathematica, LaTeX, HTML/CSS.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Results from Our Work Section -->
+        <h3 class="text-success mb-4">Results from Our Work</h3>
+        <p>Here are a few highlights from our publications. For more details, head to my <a href="https://inspirehep.net/authors/2094706?ui-citation-summary=true" target="_blank">InspireHEP page,</a> and the <a href="academic.html#phd-title"> PhD Highlights</a> section.</p>
+        <p>You can also click on the images to read the papers.</p>
+        <div id="researchCarousel" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 50%;">
+            <ol class="carousel-indicators">
+                <li data-target="#researchCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#researchCarousel" data-slide-to="1"></li>
+                <li data-target="#researchCarousel" data-slide-to="2"></li>
+                <li data-target="#researchCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" style="height: 500px; display: flex; align-items: center;">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <a href="https://arxiv.org/pdf/2401.02697" target="_blank">
+                        <img src="images/itmp1.png" class="d-block w-100" style="object-fit: contain;" alt="Plot 1">
+                    </a>
+                </div>
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <a href="https://arxiv.org/pdf/2310.08883" target="_blank">
+                        <img src="images/idmvllp1.png" class="d-block w-100" style="object-fit: contain;" alt="Plot 2">
+                    </a>
+                </div>
+                <!-- Third Slide -->
+                <div class="carousel-item">
+                    <a href="https://arxiv.org/pdf/2209.05890" target="_blank">
+                        <img src="images/r2ts1p1.png" class="d-block w-100" style="object-fit: contain;" alt="Plot 3">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://arxiv.org/pdf/2108.06506" target="_blank">
+                        <img src="images/s1s3p1.png" class="d-block w-100" style="object-fit: contain;" alt="Plot 4">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#researchCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#researchCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Captions Below the Carousel -->
+        <div class="carousel-captions mt-3">
+            <div id="carouselCaption0" class="d-none">
+                <h5>Inert Triplet Model at a Muon Collider</h5>
+                <p>Discovery reach for charged scalars from the Inert Triplet Model, using disappearing tracks and Forward muons from VBF at a Muon Collider.</p>
+            </div>
+            <div id="carouselCaption1" class="d-none">
+                <h5>Interplay of Inert Doublet and a hypercharged VLL dark sector</h5>
+                <p>Effects of mass splitting and dark Yukawa couplings on the dark matter relic, when a dark doublet scalar and a dark triplet vectorlike fermion influence each-other in the early universe.</p>
+            </div>
+            <div id="carouselCaption2" class="d-none">
+                <h5>Distinguishing between leptoquark eigenstates after mixing</h5>
+                <p>Attept to discern between three leptoquark states: a pure doublet, and two mixed states having mostly singlet and mostly doublet, respectively, using cross-generation final states.</p>
+            </div>
+            <div id="carouselCaption3" class="d-none">
+                <h5>Collider reach of the \(S_3\) leptoquark</h5>
+                <p>Mass vs Yukawa coupling reach for a scalar triplet leptoquark, motivated by B-anomalies, from single production at the LHC/FCC.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+        <a href="https://orcid.org/" target="_blank"><img src="images/orcid.png" alt="ORCID" class="social-icon"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/github.png" alt="GitHub" class="social-icon"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to update the captions based on the active carousel item
+        $('#researchCarousel').on('slide.bs.carousel', function (e) {
+            $('.carousel-captions > div').addClass('d-none'); // Hide all captions
+            $('#carouselCaption' + $(e.relatedTarget).index()).removeClass('d-none'); // Show the current caption
+        });
+
+        // Initial caption display
+        $(document).ready(function() {
+            $('#carouselCaption0').removeClass('d-none');
+        });
+    </script>
 </body>
 </html>
