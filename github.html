@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From my Github - Snehashis Parashar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom Styling for Code Blocks */
+        pre, code {
+            color: #FF6F61; /* Coral color for the text */
+            background-color: transparent; /* No background */
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: left; /* Ensure left alignment */
+            white-space: pre-wrap; /* Prevent long lines from overflowing */
+            word-wrap: break-word; /* Break long words if needed */
+            overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Snehashis Parashar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="academic.html">Academic Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="github.html">From my Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="container py-5">
+        <h2 class="text-success mb-4">FeynCreation</h2>
+        
+        <!-- Section for README -->
+        <div id="readme-content">
+            <!-- <h4>FeynCreation</h4> -->
+            <p><strong>FeynCreation</strong> is a Python tool that allows you to generate Feynman diagrams interactively, using the <code>feynman</code> package.</p>
+
+            <h5>Features</h5>
+            <ul>
+                <li>Currently has two classes of diagrams: <code>twotwo</code> that handles 2-&gt;2 processes, and <code>vbf1</code> that has VBF-type production of single particles.</li>
+                <li>Has four-point contact annihilation, s-channel, and t-channel diagrams for <code>twotwo</code> processes.</li>
+                <li>Uses LaTeX to render particle labels in diagrams.</li>
+                <li>Supports customizable arrows for incoming, outgoing, and mediator particles.</li>
+                <li>Supports interactive, card-based, and script-based generation.</li>
+                <li>Own particles and their LaTeX rendering can be added manually in the <code>particles.py</code> file.</li>
+            </ul>
+
+            <h5>Installation</h5>
+            <p>Clone the repository and install the package:</p>
+            <pre><code>git clone git@github.com:snehashishep/feyncreation.git</code></pre>
+            <pre><code>cd feyncreation</code></pre>
+            <pre><code>pip install -e .</code></pre>
+
+
+            <h5>Usage</h5>
+            <p>From the package directory, in the command line, type and enter:</p>
+            <pre><code>feyncreation</code></pre>
+            <p>and follow the prompts.</p>
+        </div>
+
+        <!-- Link to GitHub Repository -->
+        <div class="mt-4">
+            <a href="https://github.com/snehashishep/feyncreation" class="btn btn-success" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+        <a href="https://orcid.org/0000-0002-0731-4569" target="_blank"><img src="images/orcid.png" alt="ORCID" class="social-icon"></a>
+        <a href="https://github.com/snehashishep" target="_blank"><img src="images/github.png" alt="GitHub" class="social-icon"></a>
+        <a href="https://twitter.com/lazylegolas?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+        <a href="https://www.instagram.com/lunatic_earthling/" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
